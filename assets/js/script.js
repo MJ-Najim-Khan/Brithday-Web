@@ -8,18 +8,26 @@
   var FLOWER_CYCLE = [
     "assets/images/flower-1.png",
     "assets/images/flower-2.png",
-    "assets/images/flower-2.png",
+    "assets/images/flower-3.png",
     "assets/images/flower-1.png",
     "assets/images/flower-2.png",
-    "assets/images/flower-2.png",
+    "assets/images/flower-3.png",
     "assets/images/flower-2.png",
     "assets/images/flower-1.png",
-    "assets/images/flower-1.png",
-    "assets/images/flower-2.png",
+    "assets/images/flower-3.png",
   ];
 
-  // Replace these with your own local photo paths.
-  var PHOTOS = ["assets/images/njam.jpg", "assets/images/centre.png", "assets/images/rose.png", "assets/images/flower-1.png", "assets/images/flower-2.png"];
+  var PHOTOS = [
+    "assets/images/gallery/DonBelle.jpeg",
+    "assets/images/gallery/_ (20).jpeg",
+    "assets/images/gallery/_ (21).jpeg",
+    "assets/images/gallery/_ (22).jpeg",
+    "assets/images/gallery/_ (23).jpeg",
+    "assets/images/gallery/_ (24).jpeg",
+    "assets/images/gallery/donbelle.jpeg",
+    "assets/images/gallery/this is peace_.jpeg",
+    "assets/images/gallery/🌸🧿.jpeg",
+  ];
 
   var LETTER_TEXT =
     "To My Dearest, I am writing this little note just because you have been on my mind all day long, which is nothing new since you pretty much live there anyway. Every single time I think about your smile, my heart does a tiny happy dance. I find myself smiling at my phone like a complete fool whenever your name pops up, and honestly, it is my absolute favorite part of the day. You have this wonderful way of making the whole world feel brighter and sweeter just by being you. Thank you for all the warm hugs, the soft giggles we share, and the beautiful comfort of knowing you are mine. Being your boyfriend is the happiest thing that has ever happened to me, and I count myself incredibly lucky to hold your hand and walk through life beside you. Please never forget how deeply you are loved and cherished. You are my favorite person, my safest space, and my absolute dream come true. I love you more than all the stars in the night sky, and I cannot wait until the next time I get to hold you close. Forever and always yours, Your Love";
@@ -29,11 +37,8 @@
   var giftBoxBtn = document.getElementById("gift-box-btn");
   var music = document.getElementById("bg-music");
   giftBoxBtn.addEventListener("click", function () {
-    music.hidden = false;
     music.volume = 0.4;
-    music.play().catch(function () {
-      // Native controls allow a manual retry if playback is blocked.
-    });
+    music.play().catch(function () {});
   }, { once: true });
   var bloomField = document.getElementById("bloom-field");
   var page2 = document.getElementById("page2");
