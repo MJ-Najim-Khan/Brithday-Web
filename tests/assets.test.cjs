@@ -1,6 +1,8 @@
 const fs = require("node:fs");
+const path = require("node:path");
+process.chdir(path.resolve(__dirname, ".."));
 const html = fs.readFileSync("index.html", "utf8");
-const js = fs.readFileSync("script.js", "utf8");
+const js = fs.readFileSync("assets/js/script.js", "utf8");
 
 for (const [, id] of js.matchAll(/getElementById\("([^"]+)"\)/g))
   if (!html.includes(`id="${id}"`)) throw new Error(`Missing #${id}`);

@@ -867,3 +867,11 @@ button { font-family: inherit; }
   }
 }
 button:focus-visible { outline: 3px solid #800000; outline-offset: 5px; }
+#bg-music {
+  position: fixed;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  right: 12px;
+  width: min(280px, calc(100vw - 24px));
+  height: 36px;
+  z-index: 800;
+}
